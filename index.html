@@ -52,6 +52,20 @@
                 color: inherit;
             }
 
+            /* --- IMAGE PLACEHOLDER --- */
+            .image-placeholder {
+                background-color: #e2e8f0;
+                color: #64748b;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 13px;
+                font-style: italic;
+                border-radius: var(--border-radius);
+                border: 2px dashed #cbd5e1;
+                width: 100%;
+            }
+
             /* --- TOP HEADER / NAVBAR --- */
             .header-top {
                 background-color: var(--bg-dark);
@@ -177,10 +191,7 @@
             /* --- HERO SECTION --- */
             .hero {
                 position: relative;
-                background:
-                    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)),
-                    url("https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80")
-                        center/cover no-repeat;
+                background: var(--bg-dark);
                 color: #ffffff;
                 padding: 60px 20px 80px 20px;
                 text-align: center;
@@ -333,13 +344,9 @@
                 background-color: #f5f3ee;
             }
 
-            .founder-img {
-                width: 100%;
-                height: auto;
-                border-radius: var(--border-radius);
+            .founder-img-placeholder {
+                height: 280px;
                 margin: 25px 0;
-                object-fit: cover;
-                box-shadow: var(--shadow);
             }
 
             .story-text p {
@@ -391,10 +398,8 @@
                 box-shadow: var(--shadow);
             }
 
-            .journey-card img {
-                width: 100%;
+            .journey-card-placeholder {
                 height: 200px;
-                object-fit: cover;
             }
 
             .journey-card-body {
@@ -483,12 +488,6 @@
             .trip-card-img {
                 position: relative;
                 height: 220px;
-            }
-
-            .trip-card-img img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
             }
 
             .trip-card-body {
@@ -637,12 +636,10 @@
                 text-align: center;
             }
 
-            .testimonial-card img {
-                width: 100%;
+            .testimonial-placeholder {
                 height: 250px;
-                object-fit: cover;
-                border-radius: 8px;
                 margin-bottom: 15px;
+                border-radius: 8px;
             }
 
             .stars {
@@ -922,11 +919,9 @@
                 <p><strong>project web / ....</strong></p>
                 <p>project web / ....</p>
 
-                <img
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80"
-                    alt="Founder"
-                    class="founder-img"
-                />
+                <div class="image-placeholder founder-img-placeholder">
+                    ini gambar
+                </div>
 
                 <p><strong>project web / ....</strong></p>
                 <p>project web / ....</p>
@@ -953,10 +948,9 @@
 
             <div class="journey-cards">
                 <div class="journey-card">
-                    <img
-                        src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=600&q=80"
-                        alt="Sahara"
-                    />
+                    <div class="image-placeholder journey-card-placeholder">
+                        ini gambar
+                    </div>
                     <div class="journey-card-body">
                         <span class="tag">project web / ....</span>
                         <h3>project web / ....</h3>
@@ -966,10 +960,9 @@
                 </div>
 
                 <div class="journey-card">
-                    <img
-                        src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=600&q=80"
-                        alt="Ruins"
-                    />
+                    <div class="image-placeholder journey-card-placeholder">
+                        ini gambar
+                    </div>
                     <div class="journey-card-body">
                         <span class="tag">project web / ....</span>
                         <h3>project web / ....</h3>
@@ -979,10 +972,9 @@
                 </div>
 
                 <div class="journey-card">
-                    <img
-                        src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80"
-                        alt="Mediterranean Coast"
-                    />
+                    <div class="image-placeholder journey-card-placeholder">
+                        ini gambar
+                    </div>
                     <div class="journey-card-body">
                         <span class="tag">project web / ....</span>
                         <h3>project web / ....</h3>
@@ -1009,10 +1001,9 @@
                 <div class="trip-card">
                     <span class="badge-featured">project web / ....</span>
                     <div class="trip-card-img">
-                        <img
-                            src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=500&q=80"
-                            alt="Trip"
-                        />
+                        <div class="image-placeholder" style="height: 100%">
+                            ini gambar
+                        </div>
                     </div>
                     <div class="trip-card-body">
                         <h3>project web / ....</h3>
@@ -1039,10 +1030,9 @@
                 <div class="trip-card">
                     <span class="badge-featured">project web / ....</span>
                     <div class="trip-card-img">
-                        <img
-                            src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=500&q=80"
-                            alt="Trip"
-                        />
+                        <div class="image-placeholder" style="height: 100%">
+                            ini gambar
+                        </div>
                     </div>
                     <div class="trip-card-body">
                         <h3>project web / ....</h3>
@@ -1069,10 +1059,9 @@
                 <div class="trip-card">
                     <span class="badge-featured">project web / ....</span>
                     <div class="trip-card-img">
-                        <img
-                            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&q=80"
-                            alt="Trip"
-                        />
+                        <div class="image-placeholder" style="height: 100%">
+                            ini gambar
+                        </div>
                     </div>
                     <div class="trip-card-body">
                         <h3>project web / ....</h3>
@@ -1099,10 +1088,9 @@
                 <div class="trip-card">
                     <span class="badge-featured">project web / ....</span>
                     <div class="trip-card-img">
-                        <img
-                            src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=500&q=80"
-                            alt="Trip"
-                        />
+                        <div class="image-placeholder" style="height: 100%">
+                            ini gambar
+                        </div>
                     </div>
                     <div class="trip-card-body">
                         <h3>project web / ....</h3>
@@ -1129,10 +1117,9 @@
                 <div class="trip-card">
                     <span class="badge-featured">project web / ....</span>
                     <div class="trip-card-img">
-                        <img
-                            src="https://images.unsplash.com/photo-1476514525535-ce74f45814ce?auto=format&fit=crop&w=500&q=80"
-                            alt="Trip"
-                        />
+                        <div class="image-placeholder" style="height: 100%">
+                            ini gambar
+                        </div>
                     </div>
                     <div class="trip-card-body">
                         <h3>project web / ....</h3>
@@ -1159,10 +1146,9 @@
                 <div class="trip-card">
                     <span class="badge-featured">project web / ....</span>
                     <div class="trip-card-img">
-                        <img
-                            src="https://images.unsplash.com/photo-1500835556837-99ac94a94552?auto=format&fit=crop&w=500&q=80"
-                            alt="Trip"
-                        />
+                        <div class="image-placeholder" style="height: 100%">
+                            ini gambar
+                        </div>
                     </div>
                     <div class="trip-card-body">
                         <h3>project web / ....</h3>
@@ -1202,10 +1188,9 @@
                 <div class="trip-card">
                     <span class="badge-discount">project web / ....</span>
                     <div class="trip-card-img">
-                        <img
-                            src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=500&q=80"
-                            alt="City"
-                        />
+                        <div class="image-placeholder" style="height: 100%">
+                            ini gambar
+                        </div>
                     </div>
                     <div class="trip-card-body">
                         <h3>project web / ....</h3>
@@ -1227,10 +1212,9 @@
                 <div class="trip-card">
                     <span class="badge-discount">project web / ....</span>
                     <div class="trip-card-img">
-                        <img
-                            src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=500&q=80"
-                            alt="City"
-                        />
+                        <div class="image-placeholder" style="height: 100%">
+                            ini gambar
+                        </div>
                     </div>
                     <div class="trip-card-body">
                         <h3>project web / ....</h3>
@@ -1252,10 +1236,9 @@
                 <div class="trip-card">
                     <span class="badge-discount">project web / ....</span>
                     <div class="trip-card-img">
-                        <img
-                            src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=500&q=80"
-                            alt="City"
-                        />
+                        <div class="image-placeholder" style="height: 100%">
+                            ini gambar
+                        </div>
                     </div>
                     <div class="trip-card-body">
                         <h3>project web / ....</h3>
@@ -1276,10 +1259,9 @@
                 <!-- City 4 -->
                 <div class="trip-card">
                     <div class="trip-card-img">
-                        <img
-                            src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=500&q=80"
-                            alt="City"
-                        />
+                        <div class="image-placeholder" style="height: 100%">
+                            ini gambar
+                        </div>
                     </div>
                     <div class="trip-card-body">
                         <h3>project web / ....</h3>
@@ -1294,10 +1276,9 @@
                 <div class="trip-card">
                     <span class="badge-discount">project web / ....</span>
                     <div class="trip-card-img">
-                        <img
-                            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80"
-                            alt="City"
-                        />
+                        <div class="image-placeholder" style="height: 100%">
+                            ini gambar
+                        </div>
                     </div>
                     <div class="trip-card-body">
                         <h3>project web / ....</h3>
@@ -1318,10 +1299,9 @@
                 <!-- City 6 -->
                 <div class="trip-card">
                     <div class="trip-card-img">
-                        <img
-                            src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=500&q=80"
-                            alt="City"
-                        />
+                        <div class="image-placeholder" style="height: 100%">
+                            ini gambar
+                        </div>
                     </div>
                     <div class="trip-card-body">
                         <h3>project web / ....</h3>
@@ -1347,15 +1327,16 @@
                 project web / ....
             </p>
 
-            <img
-                src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=600&q=80"
-                alt="Soul"
+            <div
+                class="image-placeholder"
                 style="
-                    width: 100%;
+                    height: 250px;
                     border-radius: var(--border-radius);
                     margin-bottom: 25px;
                 "
-            />
+            >
+                ini gambar
+            </div>
 
             <div class="feature-item-inline">
                 <h3>project web / ....</h3>
@@ -1507,10 +1488,9 @@
             <div class="testimonial-cards">
                 <!-- Review 1 -->
                 <div class="testimonial-card">
-                    <img
-                        src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=500&q=80"
-                        alt="Guest"
-                    />
+                    <div class="image-placeholder testimonial-placeholder">
+                        ini gambar
+                    </div>
                     <div class="stars">★★★★★</div>
                     <p>"project web / ...."</p>
                     <div class="client-name">project web / ....</div>
@@ -1519,10 +1499,9 @@
 
                 <!-- Review 2 -->
                 <div class="testimonial-card">
-                    <img
-                        src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80"
-                        alt="Guest"
-                    />
+                    <div class="image-placeholder testimonial-placeholder">
+                        ini gambar
+                    </div>
                     <div class="stars">★★★★★</div>
                     <p>"project web / ...."</p>
                     <div class="client-name">project web / ....</div>
@@ -1531,10 +1510,9 @@
 
                 <!-- Review 3 -->
                 <div class="testimonial-card">
-                    <img
-                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80"
-                        alt="Guest"
-                    />
+                    <div class="image-placeholder testimonial-placeholder">
+                        ini gambar
+                    </div>
                     <div class="stars">★★★★★</div>
                     <p>"project web / ...."</p>
                     <div class="client-name">project web / ....</div>
